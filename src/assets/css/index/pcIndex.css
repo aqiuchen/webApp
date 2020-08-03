@@ -1,0 +1,113 @@
+.pcIndex{
+  width: 1200px;
+  padding: 10px 0;
+  /* border: 1px solid red; */
+  margin: 0 auto;
+}
+.pcIndex>h5{
+  text-align: center;
+  font-size: 16px;
+  margin-top: 20px;
+}
+.pcIndex-head{
+  width: 100%;
+  overflow: hidden;
+  padding: 10px 0;
+  border-bottom: 1px solid #42B983;
+}
+.pcIndex-head h3{
+  width: 100%;
+  margin: 10px 0;
+  font-size: 20px;
+  text-align: center;
+}
+.pcIndex-head-main{
+  width: 700px;
+  padding: 10px;
+  margin: 0 auto;
+  box-shadow: 1px 1px 5px #999999;
+  border-radius: 5px;
+  font-size: 14px;
+}
+.pcIndex-head-main-top{
+  width: 60px;
+  height: 26px;
+  line-height: 26px;
+  text-align: center;
+  box-shadow: 1px 1px 5px #999999;
+  font-size: 16px;
+  margin: -10px auto;
+}
+.pcIndex-head-main p{
+  margin: 5px 0 0 0;
+}
+.pcIndex-head-main i{
+  color: #42B983;
+}
+/* 产品展示列表 */
+.pcIndex-content{
+  overflow: hidden;
+  margin: 0px 0 20px 0;
+  padding: 10px 0;
+  /* border-bottom: 1px solid #42B983; */
+}
+.pcIndex-content-main{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  /* border: 1px solid red; */
+}
+.pcIndex-content-list{
+  text-align: center;
+  width: 500px;
+  height: 300px;
+  margin-top: 20px;
+  box-shadow: 1px 1px 5px #999999;
+  overflow: hidden;
+}
+.pcIndex-content-list img{
+  width: 100%;
+  transition: all 1s;
+}
+.pcIndex-content-list img:hover{
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+}
+.pcIndex-content-list h5{
+  font-size: 16px;
+  margin: 10px 0;
+}
+.pcIndex-content-list p{
+  font-size: 14px;
+}
+.pcIndex-bottom{
+  border-top: 1px solid #42B983;
+  margin: 10px 0;
+  padding: 5px 0;
+  text-align: center;
+}
+.pcIndex-bottom p{
+  font-size: 12px;
+  margin-top: 2px;
+}
+/* 二维码 */
+.pcIndex-ewm{
+  width: 130px;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  text-align: center;
+  background-color: white;
+  padding: 5px;
+  border-radius: 5px;
+}
+.pcIndex-ewm img{
+  width: 130px;
+}
+.pcIndex-ewm p{
+  font-size: 12px;
+}

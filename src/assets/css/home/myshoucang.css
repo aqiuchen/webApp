@@ -1,0 +1,183 @@
+.myshoucang, .test1, .test2, .test3{
+  padding: 0.8rem 0;
+}
+
+.myshoucang_main {
+  width: 90%;
+  padding: 0 5%;
+  /* border: 1px solid red; */
+}
+.myshoucang_main h5{
+  font-size: 0.3rem;
+}
+.myshoucang_main_list{
+  /* display: flex; */
+  /* justify-content: space-between; */
+}
+.myshoucang_main_list a{
+  width: 100%;
+  display: block;
+  margin-top: 0.2rem;
+  font-size: 0.3rem;
+  color: #42B983;
+}
+/* test1页面 */
+.test1_main_top{
+  width: 80%;
+  padding: 0.1rem 10%;
+  background-color: white;
+  /* border: 1px solid red; */
+  overflow: hidden;
+}
+.test1_main_top input{
+  width: 70%;
+  height: 0.8rem;
+  border-radius: 0.1rem;
+  border: 0.02rem solid #17B3A3;
+  padding: 0 2%;
+  text-align: center;
+  font-size: 0.28rem;
+  float: left;
+}
+.test1_main_top button{
+  width: 20%;
+  float: right;
+  height: 0.8rem;
+  background-color: #42B983;
+  border: none;
+  color: white;
+  font-size: 0.3rem;
+  border-radius: 0.1rem;
+}
+.test1_main_ul{
+  width: 80%;
+  margin: 0 auto;
+  max-height: 8rem;
+  min-height: 0;
+  overflow-y: auto;
+}
+.test1_main_list{
+  animation: drsSelectZK 0.3s linear;
+  -webkit-animation: drsSelectZK 0.3s linear;
+}
+.test1_main_list li{
+  text-align: center;
+  height: 0.6rem;
+  line-height: 0.6rem;
+  font-size: 0.3rem;
+}
+/* 动画 */
+@keyframes drsSelectZK{
+	from{
+		margin-top: -3rem;
+	}
+	to{
+		margin-top: 0;
+	}
+}
+/* test2页面 */
+.test2_main{
+
+}
+.test2_main_list ul{
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+.test2_main_list li{
+  float: left;
+  text-align: center;
+  font-size: 0.3rem;
+  padding: 0.26rem 0.1rem;
+}
+.test2_main_list{
+  /* border: 1px solid red; */
+}
+.test2_title{
+  width: 100%;
+  background-color: #f1f4f4;
+  border-bottom: 1px solid #efefef;
+}
+.test2_value{
+  width: 100%;
+  background-color: white;
+  border-bottom: 1px solid #efefef;
+}
+.test2_input{
+  /* border: 1px solid red; */
+  margin: 0.2rem 0;
+}
+.test2_input div{
+  width: 94%;
+  padding: 0.2rem 3%;
+  border-bottom: 1px solid #42B983;
+  overflow: hidden;
+  font-size: 0.28rem;
+}
+.test2_input span{
+  float: left;
+}
+.test2_input input{
+  float: right;
+  border: none;
+  text-align: right;
+}
+/* test2下拉框 */
+.test2_select{
+
+}
+.test2_select ul{
+  animation: drsSelectZK2 0.3s linear;
+  -webkit-animation: drsSelectZK2 0.3s linear;
+  width: 100%;
+  margin: 0 auto;
+  max-height: 3rem;
+  min-height: 0;
+  overflow-y: auto;
+  border: 1px slid red;
+  font-size: 0.28rem;
+}
+.test2_select ul li{
+  width: 100%;
+  padding-top: 0.2rem;
+  text-align: center;
+}
+/* 动画 */
+@keyframes drsSelectZK2{
+	from{
+		margin-bottom: -3rem;
+	}
+	to{
+		margin-bottom: 0;
+	}
+}
+/* test3页面 */
+.test3_select ul{
+  animation: drsSelectZK3 0.3s linear;
+  -webkit-animation: drsSelectZK3 0.3s linear;
+  width: 100%;
+  margin: 0 auto;
+  max-height: 3rem;
+  min-height: 0;
+  overflow-y: auto;
+  border: 1px slid red;
+  font-size: 0.28rem;
+}
+.test3_select ul li{
+  width: 100%;
+  padding-top: 0.2rem;
+  text-align: center;
+}
+/* 动画 */
+@keyframes drsSelectZK3{
+	from{
+		margin-top: -3rem;
+	}
+	to{
+		margin-top: 0;
+	}
+}
+/* test4页面 */
+.test4{
+  width: 100%;
+}

@@ -1,0 +1,127 @@
+{
+  "Vue": [{
+    "zsId": "001",
+    "zsTitle": "Vue的核心",
+    "zsTrue": "Vue的核心是<span>响应式</span>数据绑定系统。"
+  }, {
+    "zsId": "002",
+    "zsTitle": "关于Vue的兼容性",
+    "zsTrue": "Vue不支持<span>IE8及其以下版本</span>，因为Vue使用了IE8不能模拟的ECMAScript5特性。所以Vue支持<span>所有兼容 ECMAScript 5</span> 的浏览器。"
+  },{
+    "zsId": "003",
+    "zsTitle": "计算属性computed",
+    "zsTrue": "计算属性可以用于复杂计算，带有<span>缓存</span>功能。"
+  },{
+    "zsId": "004",
+    "zsTitle": "computed、methods、watch的区别",
+    "zsTrue": "computed基于依赖缓存，<span>只有在它的相关依赖发生改变时才会重新取值</span>。<br>methods不能缓存，<span>每次渲染都会执行</span>。<br>watch当你想要在数据变化响应时，执行异步操作或昂贵操作时，这是很有用的。"
+  },{
+    "zsId": "005",
+    "zsTitle": "v-if 和 v-show的区别",
+    "zsTrue": "v-if：判断是否加载，可以减轻服务器的压力，在需要时加载（true加载，false不加载）。<br>v-show：调整css display属性，可以使客户端操作更加流畅（true显示，false隐藏）。<br><span>v-show有更大的初始加载时延，v-if有更大的页面请求响应时延</span>。"
+  },{
+    "zsId": "006",
+    "zsTitle": "vue打包命令",
+    "zsTrue": "<span>npm run build</span>"
+  },{
+    "zsId": "007",
+    "zsTitle": "vue去掉路由后面的#",
+    "zsTrue": "在router.js里面添加<span>mode: 'history'</span>"
+  },{
+    "zsId": "008",
+    "zsTitle": "项目构建",
+    "zsTrue": "在构建大型应用时推荐使用NPM安装，NPM能很好的和诸如 webpack 或 Browserify 模块打包器配合使用，vue也提供配套工具来开发单文件组件。"
+  },{
+    "zsId": "009",
+    "zsTitle": "vue是什么",
+    "zsTrue": "vue是一套构建用户界面的<span>渐进式框架</span>。<br>vue的目标是通过尽可能简单的API实现响应的数据绑定和组合的视图组件。"
+  },{
+    "zsId": "010",
+    "zsTitle": "vue的生命周期",
+    "zsTrue": "vue的生命周期包含：beforeCreate<span>创建</span>(前后)created、beforeMount<span>载入</span>(前后)mounted、beforeUpdate<span>更新</span>(前后)updated、beforeDestroy<span>销毁</span>销毁(前后)destroyed。还包含：计算属性(computed)、组件注册(components)、事件属性(methods)、监听属性(watch)。"
+  },{
+    "zsId": "011",
+    "zsTitle": "vue小提示",
+    "zsTrue": "vue中<span>{{}}</span>的值解析为文本格式，如需要对数据进行换行和改变标签等操作，则需要使用<span>v-html</span>来赋值才能识别解析。"
+  },{
+    "zsId": "012",
+    "zsTitle": "事件冒泡",
+    "zsTrue": "操作当前标签，同时会操作到它的父级标签以及祖先标签，导致事件被多次执行产生冒泡。"
+  },{
+    "zsId": "013",
+    "zsTitle": "props",
+    "zsTrue": "props是父组件用来传递数据的一个自定义属性，也就是说如果使用了props，那么就表示父组件需要传递数据了。<br>一般是在父组件引入的子组件标签中使用<span>props='msg'</span>，子组件在js中使用props获取父组件中定义的props名字：<span>props:['msg']</span>。"
+  },{
+    "zsId": "014",
+    "zsTitle": "slot",
+    "zsTrue": "内容分发，用于在父组件中向子组件插入数据，如果单个slot没有name属性，那么所有数据都插入到这个slot中。"
+  },{
+    "zsId": "015",
+    "zsTitle": "vue使用axios请求本地json数据",
+    "zsTrue": "vue使用axios请求本地json数据时，本地json数据必须放在<span>static</span>文件夹下，不然请求失败。"
+  },{
+    "zsId": "016",
+    "zsTitle": "vue父组件调用子组件方法",
+    "zsTrue": "在父组件引入的子组件标签中使用<span>ref='msg'</span>，在触发调用的方法中使用 <span>this.$refs.msg.子组件方法名()</span>进行调用子组件即可，子组件中只需要写被调用的方法。"
+  },{
+    "zsId": "017",
+    "zsTitle": "vue子组件调用父组件的方法",
+    "zsTrue": "1、父组件中写被调用的方法，子组件中直接在调用事件中使用 <span>this.$parent.父组件方法名()</span>进行调用即可。<br>2、父组件写被调用方法并在子组件标签中写 <span>@fuzujian='fuzujian'</span>进行监听，子组件中使用 <span>this.$emit('fuzujian')</span>调用即可。"
+  },{
+    "zsId": "018",
+    "zsTitle": "input获取和失去焦点方法",
+    "zsTrue": "1、获取焦点：<span>@focus='aq()'</span>。<br>2、失去焦点：<span>@blur='aq()'</span>。"
+  },{
+    "zsId": "019",
+    "zsTitle": "vue引入公共js的方法",
+    "zsTrue": "1、aq.js书写格式：<span>export default{xy(){}}</span>。<br>2、在main.js中全局引入注册，引入：<span>import aq from 'js文件路径'</span>，注册：<span>Vue.prototype.aq = aq</span>。<br>3、使用js：<span>this.aq.xy()</span>。<br>其实在使用vuex后就不需要再单独引入这样的方法，该方法与vuex相似。"
+  },{
+    "zsId": "020",
+    "zsTitle": "vuex简介",
+    "zsTrue": "vuex是全局仓库，里面定义的变量和方法都是全局性的，可以在任何页面使用。"
+  },{
+    "zsId": "021",
+    "zsTitle": "vuex使用",
+    "zsTrue": "1、使用vuex中定义的state变量：<span>this.$store.state.变量名</span>。<br>2、调用vuex中的方法：<span>this.$store.commit('方法名',传入的参数)</span>。"
+  },{
+    "zsId": "022",
+    "zsTitle": "vuex小提示",
+    "zsTrue": "修改state中变量的值必须要在<span>mutations</span>中进行修改。不要问为什么，官方定的。"
+  },{
+    "zsId": "023",
+    "zsTitle": "mapState使用",
+    "zsTrue": "mapState属于语法糖，用于简化书写方式。<br>未使用mapState获取vuex中的state变量写法：<span>this.$store.state.变量名</span>。<br>使用mapState后直接写为：<span>变量名</span>。<br>注意需要引入<span>import {mapState, mapActions, mapGetters} from 'vuex'</span>，同时在computed中定义：<span>...mapState({变量名:state => state.变量名})</span>。"
+  },{
+    "zsId": "024",
+    "zsTitle": "vue表单之单选",
+    "zsTrue": "多个单选需要定义相同的name才能实现单选效果，同时定义value值、事件，事件获取当前按钮值：<span>@click='aq(value值)'</span>，若初始加载需要指定选择值则添加：<span>v-model='name'</span>，name赋值需要选中的value值。"
+  },{
+    "zsId": "025",
+    "zsTitle": "vue表单之复选",
+    "zsTrue": "复选与单选类似，不同之处在于若要获取选中的值，v-model中定义的变量必须是<span>数组</span>类型，一般单选复选都会配合label标签使用，通过id来指向点击的选择标签。"
+  },{
+    "zsId": "026",
+    "zsTitle": "vue路由",
+    "zsTrue": "vue路由<router-link>与常规html的<a>标签类似，都是<span>跳转页面</span>。"
+  },{
+    "zsId": "027",
+    "zsTitle": "vue路由传参",
+    "zsTrue": "传参：<span><router-link :to='{ path: '/details', query: {id:caser.id}}'></span>。<br>获取传参：<span>this.$route.query.id</span>。"
+  },{
+    "zsId": "028",
+    "zsTitle": "vue方法跳转路由及传参",
+    "zsTrue": "1、直接跳转：<span>this.$router.replace('/home')</span>。<br>2、跳转并传参：<span>this.$router.push({path: '/index',query: {name: this.userName}})</span>。"
+  },{
+    "zsId": "029",
+    "zsTitle": "vue子路由",
+    "zsTrue": "<span><router-link></span>跳转子路由路径，<span><router-view></span>加载子路由，写在哪个位置就在哪个位置加载，也可对子路由页面进行布局调整，子路由是加载到父组件页面的，调整的子路由页面最外层的<span>position</span>属性会影响到父组件布局。"
+  },{
+    "zsId": "030",
+    "zsTitle": "子组件向父组件传值",
+    "zsTrue": "父组件向子组件传值通过<span>props</span>方法，子组件向父组件传值方法为：<br>1、子组件中定义点击事件用于传递参数：<span>@click='zzj'</span>，在zzj()事件中通过emit传递：<span>this.$emit('shou<这里的shou是父组件中定义的方法>',子组件传递的参数)</span>。<br>2、父组件中接收参数：在父组件的子组件标签中定义方法：<span>@shou='aq()'</span>，然后就可以在<span>aq()</span>方法中对获取的值进行操作了。"
+  },{
+    "zsId": "031",
+    "zsTitle": "vue跳转前先执行事件方法",
+    "zsTrue": "使用事件修饰符：<span>@click.native='aa'</span>。"
+  }]
+}

@@ -1,0 +1,19 @@
+.shopmain{
+  width: 94%;
+  padding: 1.2rem 3% 0 3%;
+}
+.shopmain-content{
+  /* border: 1px solid red; */
+}
+.shopmain-content img{
+  width: 100%;
+}
+.shopmain-content h5{
+  width: 100%;
+  text-align: center;
+  font-size: 0.32rem;
+  margin: 0.2rem 0;
+}
+.shopmain-content p{
+  font-size: 0.28rem;
+}

@@ -1,0 +1,97 @@
+/*功能列表*/
+.index_mod{
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+.index_mod>a{
+	width: 2rem;
+	text-align: center;
+	margin: 0.3rem 0 0 0;
+}
+.index_mod>a img{
+	width: 0.8rem;
+	height: 0.8rem;
+}
+.index_mod>a p{
+	font-size: 0.3rem;
+	color: black;
+	margin: 0.1rem 0 0 0;
+}
+/*今日热点*/
+.now_hot{
+	width: 100%;
+	padding: 0.24rem 0;
+
+}
+/*标题栏*/
+.now_hot_top{
+	width: 100%;
+	height: 0.6rem;
+	line-height: 0.6rem;
+	overflow: hidden;
+}
+.now_hot_top h5{
+	display: block;
+	height: 0.6rem;
+	float: left;
+	font-size: 0.36rem;
+}
+.now_hot_top a{
+	height: 0.4rem;
+	line-height: 0.4rem;
+	margin: 0.1rem 0;
+	float: right;
+	font-size: 0.24rem;
+	color: #666;
+	padding: 0 0.2rem;
+	border-radius: 0.4rem;
+	border: 0.02rem solid #e3e3e3;
+}
+/*热点列表*/
+.now_hot_main{
+	width: 100%;
+	display: flex;
+  justify-content: space-between;
+	flex-wrap: wrap;
+}
+.index_gaoshi{
+  /* border: 0.02rem solid #42B983; */
+  box-shadow: 0 0 0.1rem #999999;
+  border-radius: 0.1rem;
+  padding: 0.1rem;
+  font-size: 0.28rem;
+}
+.index_gaoshi_top{
+  text-align: center;
+  margin-bottom: 0.2rem;
+}
+.index_gaoshi_top h5{
+  /* display: block; */
+  width: 1.5rem;
+  height: 0.6rem;
+  line-height: 0.6rem;
+  margin: -0.4rem auto 0;
+  background-color: white;
+  font-size: 0.32rem;
+  box-shadow: 0 0 0.1rem #999999;
+  border-radius: 0.05rem;
+  color: #333;
+  font-style: oblique;
+}
+.index_gaoshi p{
+  line-height: 0.46rem;
+  text-align: justify;
+}
+.index_gaoshi b{
+  font-size: 0.3rem;
+}
+.index_gaoshi span{
+  color: red;
+  text-decoration: underline;
+  font-style: oblique;
+}
+.index_gaoshi i{
+  color: #42B983;
+}
